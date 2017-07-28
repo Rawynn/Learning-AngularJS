@@ -37,7 +37,7 @@
         return 0;
       }
       else{
-        var splitted = string.split(',').join(',').split('.').join(',').split(';').join(',').split(/,\ +\,/).join(',').split(',').filter(Boolean);
+        var splitted = string.split(',').join(',').split('.').join(',').split(';').join(',').split(/,\ +\, +,/).join(',').split(/,\ +\,/).join(',').split(',').filter(Boolean);
       //  console.log(splitted.length);
         console.log(splitted);
         return splitted.length;
